@@ -1,2 +1,2 @@
-# se_veeb
-Sissejuhatus erialasse veebileht - Grupp C
+# Sissejuhatus erialasse veebileht - Grupp C
+
