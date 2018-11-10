@@ -8,8 +8,7 @@ Vahelehed:
   Cloud -> Pilv
   Web -> Võrk
   Avaleht
-  
+
   Layout -> Kõre
   Javascript -> Plans
   Sisu -> Mihkelsaar (Tabelid ja muud asjad)
-  
