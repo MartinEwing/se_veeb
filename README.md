@@ -1,14 +1,14 @@
 # Sissejuhatus erialasse veebileht - Grupp C
 
 Millest teeme: Server hosting teenuse leht
-##Vahelehed:
+## Vahelehed:
  Meist
  Kontak
  Dedicated ->  Serveri
  Cloud -> Pilv
  Web -> Võrk
  Avaleht
-##Meesskonna tööjaotus
+## Meesskonna tööjaotus
  Layout -> Kõre
  Javascript -> Plans
  Sisu -> Mihkelsaar (Tabelid ja muud asjad)
