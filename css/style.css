@@ -1,0 +1,33 @@
+
+/*----Navbar----*/
+
+nav.navbar {
+    background-color: transparent !important;
+}
+
+header {
+    background-color: #32CD32;
+}
+
+header a {
+    color: #ffffff !important;
+}
+
+button.navbar-toggler {
+    border: none;
+}
+
+button:focus,
+button:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+/*----Footer----*/
+
+footer {
+    border-top: 2px solid black;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+}
