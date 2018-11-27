@@ -8,8 +8,7 @@ body {
     height:100%;
 }
 
-
-/*----Navbar----AEB0AE #2ecc71*/
+/*----Header----*/
 
 nav.navbar {
     background-color: transparent !important;
@@ -186,9 +185,6 @@ h2.why-us {
     .cta a {
         font-size: 25px;
     }
-
-
-
 }
 
 /*----Footer----*/
