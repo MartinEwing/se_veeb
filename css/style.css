@@ -70,6 +70,20 @@ button:active {
 
 /*----Content----*/
 
+.server {
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}
+
+table th {
+    background-color: #AEB0AE;
+}
+
 .carousel {
     margin-top: 50px;
 }
