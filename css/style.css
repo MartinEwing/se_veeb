@@ -69,7 +69,9 @@ button:active {
 }
 
 /*----Content----*/
-
+.meme {
+    width: 50%;
+}
 .server {
     text-align: center;
 }
