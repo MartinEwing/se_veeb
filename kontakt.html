@@ -14,19 +14,32 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="scripts/form.js"></script>
 
 </head>
 <body>
+
 
 <!--Lisame headeri-->
 <div id="header"></div>
 
 <div class="content container">
-
+    <div id="isik-ja-maks">
+        <form id="kontakt-form" onsubmit="isikjamaksSubmit()">
+            <h2>Kontakteeru meiega</h2>
+            <textarea name="comment" placeholder="Räägi meiega"></textarea>
+            <input type="text" name="e-meil" placeholder="E-meil">
+            <input type="submit" name="kontakt-submit" value="Saada">
+        </form>
+    </div>
+    <div id="loading-please-wait" class="hidden">
+        <p class="server">
+            Aitäh, et võtsite meiega ühendust!
+        </p>
+    </div>
 </div>
 
 <!--Lisame footeri-->
 <div id="footer"></div>
-
 </body>
 </html>
