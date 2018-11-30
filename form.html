@@ -1,63 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Veebi projekt</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="scripts/form.js"></script>
+    <title>Form - SuperServers9000</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png"/>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="scripts/form.js"></script>
 
 </head>
 <body>
-<header class="container-fluid">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Avaleht</a>
-          </li>
-
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
+<!--Lisame headeri-->
+<div id="header"></div>
 
 <div class="content container">
-    <header>Ostmine</header>
-    <div>
-        <legend>Serveri andmed</legend>
-        <span id="nim"></span>
-        <span id="ket"></span>
-        <span id="cpu"></span>
-        <span id="ram"></span>
-        <span id="hind"></span>
-        <script>
-          window.onload = setLegend();
-        </script>
-    </div>
     <div id="isik-ja-maks">
         <form id="isik-ja-maks-form" onsubmit="isikjamaksSubmit()">
-            <strong>Isikuandmed</strong><br>
-            Eesnimi:<input type="text" name="eesnimi">
-            <br>
-            Perekonnanimi:<input type="text" name="perekonnanimi">
-            <br>
-            Meiliaadress:<input type="text" name="meiliaadress">
-            <hr>
-            <strong>Makseandmed</strong><br>
-            Aadress:<input type="text" name="aadress">
-            <br>
-            Makseviis:<br>
+            <h2>Ostuandmed</h2>
+            <input type="text" name="eesnimi" placeholder="Eesnimi">
+            <input type="text" name="perekonnanimi" placeholder="Perekonnanimi">
+            <input type="text" name="meiliaadress" placeholder="Meiliaadress">
+            <input type="text" name="aadress" placeholder="Aadress">
+            <strong>Makseviis</strong>:<br>
             <label for="maks-ulekanne">Ulekanne</label>
             <input id="maks-ulekanne" type="radio" name="makseviis" value="ulekanne" checked>
             <br>
@@ -66,16 +39,20 @@
             <br>
             <label for="maks-paypal">PayPal</label>
             <input id="maks-paypal" type="radio" name="makseviis" value="PayBal">
-            <hr>
+            <br>
             <input type="submit" name="isik-ja-maks-submit" value="Edasi">
         </form>
     </div>
+    <div id="loading-please-wait" class="hidden">
+        <p class="server">
+            <img class="" src="img/Rolling-1.3s-200px.gif"><br>
+            Palun oodake. Ühendun serveriga
+        </p>
+    </div>
 </div>
 
-<footer>
-  Footer
-</footer>
-
+<!--Lisame footeri-->
+<div id="footer"></div>
 
 </body>
 </html>
